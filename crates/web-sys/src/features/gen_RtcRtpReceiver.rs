@@ -20,6 +20,20 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaStreamTrack`, `RtcRtpReceiver`*"]
     pub fn track(this: &RtcRtpReceiver) -> MediaStreamTrack;
+    # [wasm_bindgen (structural , method , getter , js_class = "RTCRtpReceiver" , js_name = jitterBufferTarget)]
+    #[doc = "Getter for the `jitterBufferTarget` field of this object."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/jitterBufferTarget)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `RtcRtpReceiver`*"]
+    pub fn jitter_buffer_target(this: &RtcRtpReceiver) -> Option<f64>;
+    # [wasm_bindgen (structural , method , setter , js_class = "RTCRtpReceiver" , js_name = jitterBufferTarget)]
+    #[doc = "Setter for the `jitterBufferTarget` field of this object."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/jitterBufferTarget)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `RtcRtpReceiver`*"]
+    pub fn set_jitter_buffer_target(this: &RtcRtpReceiver, value: Option<f64>);
     #[cfg(feature = "RtcRtpCapabilities")]
     # [wasm_bindgen (static_method_of = RtcRtpReceiver , js_class = "RTCRtpReceiver" , js_name = getCapabilities)]
     #[doc = "The `getCapabilities()` method."]

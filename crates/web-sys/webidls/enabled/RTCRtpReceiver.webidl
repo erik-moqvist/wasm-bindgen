@@ -17,6 +17,7 @@ interface RTCRtpReceiver {
   sequence<RTCRtpContributingSource>    getContributingSources();
   [Pref="media.peerconnection.rtpsourcesapi.enabled"]
   sequence<RTCRtpSynchronizationSource> getSynchronizationSources();
+  attribute DOMHighResTimeStamp?        jitterBufferTarget;
 
   [ChromeOnly]
   undefined setStreamIds(sequence<DOMString> streamIds);

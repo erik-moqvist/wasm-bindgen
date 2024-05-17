@@ -23,6 +23,9 @@
 * Add bindings for `RTCRtpReceiver.getCapabilities(DOMString)` method.
   [#3941](https://github.com/rustwasm/wasm-bindgen/pull/3941)
 
+* Add bindings for `RTCRtpReceiver.jitterBufferTarget`.
+  [#3968](https://github.com/rustwasm/wasm-bindgen/pull/3968)
+
 ### Changed
 
 * Stabilize Web Share API.
